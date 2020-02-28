@@ -1,59 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>hexo出错的解决办法</title>
-      <link href="/2020/02/28/hexo%E5%87%BA%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-      <url>/2020/02/28/hexo%E5%87%BA%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<p>更新中。</p><a id="more"></a><h4 id="ERROR-Deployer-not-found-git"><a href="#ERROR-Deployer-not-found-git" class="headerlink" title="ERROR Deployer not found: git"></a>ERROR Deployer not found: git</h4><p>终端输入<code>npm install hexo-deployer-git --save</code></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo-next主题的一些tips</title>
-      <link href="/2020/02/28/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9Btips/"/>
-      <url>/2020/02/28/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9Btips/</url>
-      
-        <content type="html"><![CDATA[<p>更新中。</p><a id="more"></a><h4 id="预览"><a href="#预览" class="headerlink" title="预览"></a><a href="https://blog.csdn.net/RayDon03/article/details/104441437" target="_blank" rel="noopener">预览</a></h4><p>放在代码段中无效。设置为代码格式依然有效。</p><h4 id="底部桃心-底部隐藏-站内搜索"><a href="#底部桃心-底部隐藏-站内搜索" class="headerlink" title="底部桃心/底部隐藏/站内搜索"></a><a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">底部桃心/底部隐藏/站内搜索</a></h4><p>试了一下这里也可以www<i class="fa fa-heart" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></p><h4 id="创建新文章时"><a href="#创建新文章时" class="headerlink" title="创建新文章时"></a>创建新文章时</h4><p>输入<code>hexo new &quot;新文章&quot;</code>，注意双引号不能用单引号代替。否则生成的标题会有单引号，还要手动删很麻烦。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>爬取placekitten上的图片</title>
-      <link href="/2020/02/28/%E7%88%AC%E5%8F%96placekitten%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87/"/>
-      <url>/2020/02/28/%E7%88%AC%E5%8F%96placekitten%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87/</url>
-      
-        <content type="html"><![CDATA[<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"></span><br><span class="line">response = urllib.request.urlopen(<span class="string">'http://placekitten.com/200/300'</span>)</span><br><span class="line">cat_img = response.read()</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'cat_200x300'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f: <span class="comment"># wb:以二进制格式打开一个文件只用于写入</span></span><br><span class="line">    f.write(cat_img)</span><br></pre></td></tr></table></figure><p>结果保存在和.py同一个文件夹里。</p><p>把cat_200x300文件后缀名改成jpg就可以看到了。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天建立了博客</title>
-      <link href="/2020/02/26/%E4%BB%8A%E5%A4%A9%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2020/02/26/%E4%BB%8A%E5%A4%A9%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%8D%9A%E5%AE%A2/</url>
-      
-        <content type="html"><![CDATA[<p>嘻嘻嘻</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title>hexo出错的解决办法</title>
+    <url>/2020/02/28/hexo%E5%87%BA%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<p>更新中。</p>
+<p>积累中。</p>
+<a id="more"></a>
+
+<h4 id="ERROR-Deployer-not-found-git"><a href="#ERROR-Deployer-not-found-git" class="headerlink" title="ERROR Deployer not found: git"></a>ERROR Deployer not found: git</h4><p>输入</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo-next主题的一些tips</title>
+    <url>/2020/02/28/hexo-next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9Btips/</url>
+    <content><![CDATA[<p>积累中。</p>
+<a id="more"></a>
+
+<h4 id="预览"><a href="#预览" class="headerlink" title="预览"></a><a href="https://blog.csdn.net/RayDon03/article/details/104441437" target="_blank" rel="noopener">预览</a></h4><p>放在代码段中无效。设置为代码格式依然有效。</p>
+<h4 id="底部桃心-底部隐藏-站内搜索"><a href="#底部桃心-底部隐藏-站内搜索" class="headerlink" title="底部桃心/底部隐藏/站内搜索"></a><a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">底部桃心/底部隐藏/站内搜索</a></h4><p>试了一下这里也可以www<i class="fa fa-heart" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></p>
+<h4 id="创建新文章时"><a href="#创建新文章时" class="headerlink" title="创建新文章时"></a>创建新文章时</h4><p>输入<code>hexo new &quot;新文章&quot;</code>，注意双引号不能用单引号代替。否则生成的标题会有单引号，还要手动删很麻烦。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>爬取placekitten上的图片</title>
+    <url>/2020/02/28/%E7%88%AC%E5%8F%96placekitten%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"></span><br><span class="line">response = urllib.request.urlopen(<span class="string">'http://placekitten.com/200/300'</span>)</span><br><span class="line">cat_img = response.read()</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'cat_200x300'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f: <span class="comment"># wb:以二进制格式打开一个文件只用于写入</span></span><br><span class="line">    f.write(cat_img)</span><br></pre></td></tr></table></figure>
+
+<p>结果保存在和.py同一个文件夹里。</p>
+<p>把cat_200x300文件后缀名改成jpg就可以看到了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>今天建立了博客</title>
+    <url>/2020/02/26/%E4%BB%8A%E5%A4%A9%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>嘻嘻嘻</p>
+]]></content>
+  </entry>
 </search>
