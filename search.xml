@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>自守数</title>
+    <url>/2020/02/29/%E8%87%AA%E5%AE%88%E6%95%B0/</url>
+    <content><![CDATA[<p><strong>题目</strong></p>
+<p>自守数是指一个数的平方的尾数等于该数自身的自然数。例如：25^2 = 625，76^2 = 5776，9376^2 = 87909376。请求出n以内的自守数的个数。</p>
+<a id="more"></a>
+
+<p><strong>解答</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        a, num = int(input()), <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, a + <span class="number">1</span>):</span><br><span class="line">            <span class="keyword">if</span> str(i ** <span class="number">2</span>).endswith(str(i)):</span><br><span class="line">                num += <span class="number">1</span></span><br><span class="line">        print(num)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<p>输入：2000</p>
+<p>输出：8</p>
+<p><strong>笔记</strong></p>
+<p>range(0,n)不包含n，所以记得+1。</p>
+<p>endswith()判断字符串是否以指定后缀结尾。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>记负均正</title>
     <url>/2020/02/29/%E8%AE%B0%E8%B4%9F%E5%9D%87%E6%AD%A3/</url>
     <content><![CDATA[<p><strong>输入</strong></p>
@@ -36,7 +53,7 @@
 <h4 id="创建新文章时"><a href="#创建新文章时" class="headerlink" title="创建新文章时"></a>创建新文章时</h4><p>输入<code>hexo new &quot;新文章&quot;</code>，注意双引号不能用单引号代替。否则生成的标题会有单引号，还要手动删很麻烦。</p>
 <h4 id="ERROR-Deployer-not-found-git"><a href="#ERROR-Deployer-not-found-git" class="headerlink" title="ERROR Deployer not found: git"></a>ERROR Deployer not found: git</h4><p>输入</p>
 <p><code>npm install hexo-deployer-git --save</code></p>
-]]></content>
+<h4 id="设置文章密码"><a href="#设置文章密码" class="headerlink" title="设置文章密码"></a><a href="http://dbase.cc/2017/03/31/tools/Hexo%E6%96%87%E7%AB%A0%E7%9A%84%E5%AF%86%E7%A0%81%E8%AE%BF%E9%97%AE/" target="_blank" rel="noopener">设置文章密码</a></h4>]]></content>
   </entry>
   <entry>
     <title>爬取placekitten上的图片</title>
