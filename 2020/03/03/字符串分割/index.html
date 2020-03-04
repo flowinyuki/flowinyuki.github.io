@@ -22,15 +22,15 @@
 
 
 
-  <meta name="description" content="输入描述:首先输入数字n，表示要输入多少个字符串。连续输入字符串(输出次数为N,字符串长度小于100)。 输出描述:按长度为8拆分每个字符串后输出到新的字符串数组，长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。 解答：1234567891011while True:    try:        n &#x3D; int(input())        for i in range(n):">
+  <meta name="description" content="输入 首先输入数字n，表示要输入多少个字符串。连续输入字符串(输出次数为N,字符串长度小于100)。如： 2abc123456789 输出 按长度为8拆分每个字符串后输出到新的字符串数组，长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。如： abc000001234567890000000">
 <meta property="og:type" content="article">
 <meta property="og:title" content="字符串分割">
 <meta property="og:url" content="http://yoursite.com/2020/03/03/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%86%E5%89%B2/index.html">
 <meta property="og:site_name" content="yuki‘s blog">
-<meta property="og:description" content="输入描述:首先输入数字n，表示要输入多少个字符串。连续输入字符串(输出次数为N,字符串长度小于100)。 输出描述:按长度为8拆分每个字符串后输出到新的字符串数组，长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。 解答：1234567891011while True:    try:        n &#x3D; int(input())        for i in range(n):">
+<meta property="og:description" content="输入 首先输入数字n，表示要输入多少个字符串。连续输入字符串(输出次数为N,字符串长度小于100)。如： 2abc123456789 输出 按长度为8拆分每个字符串后输出到新的字符串数组，长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。如： abc000001234567890000000">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-03T12:43:14.000Z">
-<meta property="article:modified_time" content="2020-03-03T13:13:27.102Z">
+<meta property="article:modified_time" content="2020-03-04T04:56:54.892Z">
 <meta property="article:author" content="flowinyuki">
 <meta name="twitter:card" content="summary">
 
@@ -203,10 +203,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-03 20:43:14 / 修改时间：21:13:27" itemprop="dateCreated datePublished" datetime="2020-03-03T20:43:14+08:00">2020-03-03</time>
+              <time title="创建时间：2020-03-03 20:43:14" itemprop="dateCreated datePublished" datetime="2020-03-03T20:43:14+08:00">2020-03-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-04 12:56:54" itemprop="dateModified" datetime="2020-03-04T12:56:54+08:00">2020-03-04</time>
+              </span>
 
           
 
@@ -219,10 +225,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h4><p>首先输入数字n，表示要输入多少个字符串。连续输入字符串(输出次数为N,字符串长度小于100)。</p>
-<h4 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h4><p>按长度为8拆分每个字符串后输出到新的字符串数组，长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。</p>
-<h4 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        n = int(input())</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">            s = input()</span><br><span class="line">            <span class="keyword">while</span> len(s)&gt;<span class="number">8</span>:</span><br><span class="line">                print(s[:<span class="number">8</span>])</span><br><span class="line">                s = s[<span class="number">8</span>:]</span><br><span class="line">            print(s.ljust(<span class="number">8</span>,<span class="string">'0'</span>))</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+        <p><strong>输入</strong></p>
+<p>首先输入数字n，表示要输入多少个字符串。连续输入字符串(输出次数为N,字符串长度小于100)。如：</p>
+<p>2<br>abc<br>123456789</p>
+<p><strong>输出</strong></p>
+<p>按长度为8拆分每个字符串后输出到新的字符串数组，长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。如：</p>
+<p>abc00000<br>12345678<br>90000000</p>
+<a id="more"></a>
 
+<p><strong>解答</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        n = int(input())</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">            s = input()</span><br><span class="line">            <span class="keyword">while</span> len(s)&gt;<span class="number">8</span>:</span><br><span class="line">                print(s[:<span class="number">8</span>])</span><br><span class="line">                s = s[<span class="number">8</span>:]</span><br><span class="line">            print(s.ljust(<span class="number">8</span>,<span class="string">'0'</span>))</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>笔记</strong></p>
 <p>ljust() 方法返回一个原字符串左对齐,并使用空格填充至指定长度的新字符串。如果指定的长度小于原字符串的长度则返回原字符串。</p>
 
     </div>
@@ -242,7 +256,10 @@
     <a href="/2020/02/29/%E8%87%AA%E5%AE%88%E6%95%B0/" rel="prev" title="自守数">
       <i class="fa fa-chevron-left"></i> 自守数
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/04/%E5%AD%97%E7%AC%A6%E9%80%86%E5%BA%8F/" rel="next" title="字符逆序">
+      字符逆序 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -302,7 +319,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入描述"><span class="nav-number">1.</span> <span class="nav-text">输入描述:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出描述"><span class="nav-number">2.</span> <span class="nav-text">输出描述:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解答："><span class="nav-number">3.</span> <span class="nav-text">解答：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -316,7 +332,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
